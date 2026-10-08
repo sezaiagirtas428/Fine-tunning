@@ -1096,8 +1096,7 @@ Bu eğriler modelin etkili biçimde öğrenip öğrenmediğini anlamamıza ve pe
 
 Kayıp eğrisi, modelin hatasının zaman içinde nasıl azaldığını gösterir. Başarılı bir eğitimde genellikle aşağıdaki örneğe benzer bir eğri görülür:
 
-![Eğitim ve doğrulama kaybının sağlıklı biçimde azalması](./1.png)
-
+![Görsel 1](./images/1.png)
 - **Başlangıç kaybı yüksek:** Model henüz optimize edilmediği için ilk tahminler zayıftır.
 - **Kayıp azalır:** Eğitim ilerledikçe kaybın genellikle düşmesi beklenir.
 - **Yakınsama:** Sonunda kayıp düşük bir değerde dengelenir; bu, modelin verideki örüntüleri öğrendiğine işaret eder.
@@ -1152,8 +1151,7 @@ Doğruluk eğrileri neden basamaklıdır? Kayıp sürekli bir değerdir; doğrul
 
 Model performansının dengelenmesi ve kayıp ile doğruluk eğrilerinin yataylaşması **yakınsama** olarak adlandırılır. Bu, modelin veri örüntülerini öğrendiğini ve kullanılmaya hazır olduğunu gösterebilir. Amaç, modelin her eğitimde kararlı bir performansa yakınsamasıdır.
 
-![Kayıp eğrisinde yakınsama bölgesi](./3.png)
-
+![Görsel 2](./images/2.png)
 Model yakınsadığında yeni veriler üzerinde tahmin yapabilir, performansını anlamak için değerlendirme ölçütlerine başvurabiliriz.
 
 ### Öğrenme eğrisi örüntülerini yorumlama
@@ -1164,7 +1162,7 @@ Eğrilerin biçimleri, modelin eğitimi hakkında farklı bilgiler verir. En yay
 
 Düzgün ilerleyen bir eğitimde aşağıdakine benzer eğriler görülür:
 
-![Sağlıklı eğitim ve doğrulama kaybı ile doğruluk eğrileri](./4.png)
+![Görsel 3](./images/3.png)
 Çizimde solda kayıp, sağda doğruluk eğrisi gösterilir. Kayıp başlangıçta yüksektir; zamanla azalması modelin iyileştiğine işaret eder. Kayıp, tahmin edilen çıktı ile gerçek çıktı arasındaki hatayı temsil ettiğinden azalması genellikle tahminlerin iyileştiğini gösterir.
 
 Doğruluk eğrisi başlangıçta düşük olup eğitim ilerledikçe yükselir. Doğruluk, doğru sınıflandırılan örneklerin oranıdır; eğrinin yükselmesi modelin daha fazla doğru tahmin yaptığı anlamına gelir.
@@ -1203,7 +1201,7 @@ Sağlıklı eğrilerin özellikleri:
 
 Aşırı uyum, model eğitim verisini gereğinden fazla öğrendiğinde ve doğrulama kümesinin temsil ettiği farklı verilere genelleme yapamadığında ortaya çıkar.
 
-![Eğitim kaybı düşerken doğrulama kaybının yükselmesi: aşırı uyum](./2.png)
+![Görsel 4](./images/4.png)
 Belirtileri:
 
 - Eğitim kaybı düşmeye devam ederken doğrulama kaybı yükselir veya plato yapar.
@@ -1217,7 +1215,7 @@ Aşırı uyuma karşı çözümler:
 - **Veri artırma:** Eğitim verisinin çeşitliliğini artırın.
 - **Model karmaşıklığını azaltma:** Daha küçük bir model veya daha az parametre kullanın.
 
-![Aşırı uyumda eğitim ve doğrulama kayıplarının ayrışması](./5.png)
+![Görsel 5](./images/5.png)
 Aşağıdaki örnekte aşırı uyumu önlemek için erken durdurma kullanıyoruz. `early_stopping_patience` değerini 3 yapıyoruz; doğrulama kaybı art arda üç değerlendirme döneminde iyileşmezse eğitim durdurulur.
 
 ```python
@@ -1278,7 +1276,7 @@ Aşağıdaki örnekte modelin örüntüleri öğrenip öğrenemeyeceğini görme
  )
 ```
 
-![Eğitim ve doğrulama performansının düşük kaldığı eksik uyum örneği](./6.png)
+![Görsel 6](./images/6.png)
 ### Kararsız öğrenme eğrileri
 
 Kararsız öğrenme eğrileri, modelin etkili biçimde öğrenmediğini gösterir. Olası nedenler:
@@ -1296,7 +1294,7 @@ Belirtileri:
 
 Aşağıdaki grafikler eğitim ve doğrulama eğrilerindeki kararsız davranışı gösterir:
 
-![Dalgalı eğitim ve doğrulama kayıpları](./7.png)
+![Görsel 7](./images/7.png)
 **Belirtileri:**
 
 - Kayıp veya doğrulukta sık dalgalanmalar görülür.
@@ -1304,7 +1302,7 @@ Aşağıdaki grafikler eğitim ve doğrulama eğrilerindeki kararsız davranış
 - Performans, belirgin bir eğilim olmadan dalgalanır.
 
 Eğitim ve doğrulama eğrilerinin ikisi de kararsız davranış gösterir.
-![Kararsız ve yüksek değişkenlik gösteren öğrenme eğrileri](./8.png)
+![Görsel 8](./images/8.png)
 Kararsız eğrileri düzeltmek için:
 
 - **Öğrenme oranını düşürün:** Daha kararlı adımlar için adım boyutunu azaltın.
