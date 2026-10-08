@@ -389,8 +389,7 @@ BERT gibi modeller ön eğitim (pre-training) aşamasında "Sonraki Cümle Tahmi
 ## Soru 4
 **Aşağıdaki öğrenme eğrisi, eğitim (training) ve doğrulama (validation) kaybını göstermektedir. En olası sorun nedir?**
 
-> 📈 *Grafik bu dosyaya dahil değildir. Mavi çizgi (training loss) sürekli düşer; turuncu çizgi (validation loss) bir noktaya kadar düşüp sonra yukarı tırmanır.*
-
+![Soru 4 öğrenme eğrisi](./quiz-soru-4.jpeg)
 - A) Yetersiz öğrenme (Underfitting)
 - B) Yüksek öğrenme oranı (High learning rate)
 - C) Model yeterince uzun süre eğitilmemiş (The model has not trained long enough)
@@ -419,8 +418,7 @@ Standart eğitimler 32-bit (fp32) kayan noktalı sayılarla yapılır ve GPU'da 
 ## Soru 6
 **Aşağıdaki öğrenme eğrilerine dayanarak, modeli iyileştirmek için bir sonraki mantıklı adım ne olmalıdır?**
 
-> 📈 *Grafik bu dosyaya dahil değildir. Training loss sıfıra yaklaşmış; validation loss yüksekte düzleşmiş (plato), aradaki boşluk büyük.*
-
+![Soru 6 öğrenme eğrisi](./quiz-soru-6.jpeg)
 - A) Dropout ve weight decay (ağırlık azaltma) eklemek.
 - B) Daha büyük bir model kullanmak veya daha fazla epoch boyunca eğitmek.
 - C) Öğrenme oranını (learning rate) düşürmek.
